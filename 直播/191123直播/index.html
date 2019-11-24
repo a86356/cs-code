@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<script>
+
+    // var a=1;
+    // function test() {
+    //     var e=1
+    // }
+    //
+    // var qq=1;
+    //
+    // var obj={
+    //     qq:2,
+    //     fn:function () {
+    //         console.log(this.qq)
+    //     }
+    // }
+    //
+    // obj.fn();  //2
+    // var boo =obj.fn;
+    //
+    //
+    // boo(); //1
+
+
+
+    var num = 10;
+    var obj = {
+        num:8,
+        inner: {
+            num: 6,
+            print: function () {
+                alert(this.num);
+            }
+        }
+    }
+    num = 888;
+
+
+    //1. 先看console.log(a=1)
+    //2. console.log(a=b) 得出这样的写法返回的是右边的值
+    //3. 再类比下面的函数
+   // (obj.inner.print = obj.inner.print)(); //888 这个点没有太理解
+
+    console.log(a=11)  //11
+
+    var b=2;
+    console.log(a=b);  //2
+    //(obj.inner.print = obj.inner.print)
+    (function () {
+        alert(this.num);  //window.num 888
+    })();
+
+
+</script>
+</body>
+</html>

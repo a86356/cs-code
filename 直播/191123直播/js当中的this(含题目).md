@@ -193,13 +193,7 @@ test(a);
 
 数据在计算机中是如何存储的？ 
 
-2进制     0和1
-
-
-
-  10进制  0     1    2     3     45678910
-
-  2进制    00  01  10    11  
+2进制
 
 8进制   
 
@@ -261,18 +255,11 @@ https://tool.oschina.net/hexconvert/
 
 ```javascript
 var a=1;
-
-// 形参
 function test(a) {
     var c=1+a
     console.log(c);
 }
-
-// 实参
-test(1);
-
-内存中可以存储数据 比如 a=1
-console,log(11)
+test();
 
 // 1.计算机先把js 代码转成 指令，再加载到内存中，内存混存储指令和数据，指令和数据是什么，存成什么样子的
 // 2.一条一条地执行指令
@@ -299,9 +286,6 @@ test();
 ### 站在内存看全局变量和局部变量
 
 ```javascript
-
-// 数据类型 ：
-var a;
 var a=1;
 function test(a) {
     var a=2
@@ -319,11 +303,10 @@ test(22);
 ```javascript
 var a=1;
 function test(a) {
-     a=2;
-
+    a=2;
+    console.log(11);
 }
-test(3);
-console.log(a)
+test();
 ```
 
 
@@ -347,10 +330,6 @@ while(true){
 ## 对象的调用在内存中
 
 对象是引用类型的，存储在堆内存中
-
-
-
-
 
 
 
