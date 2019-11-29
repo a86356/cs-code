@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+</head>
+<body>
+
+
+<script>
+    /*js 创建对象的一种方式是 new 函数*/
+    // 对象有属性和方法
+    function Person(name,age) {
+        this.name=name;
+        this.age=age;
+        // this.showinfo=function () {
+        //     console.log("我的名字是"+this.name+"我是年龄是"+this.age);
+        // }
+    }
+    var person1 =new Person('1',18)
+    var person2 =new Person('2',19)
+    var person3 =new Person('3',20)
+
+    //console.log(person1.showinfo==person2.showinfo)  //false
+
+    // person1.showinfo();  //我的名字是zhangsan我是年龄是18
+    // console.log(person1.name);  //zhangsan
+
+    //Person.prototype.showinfo
+
+    //每个函数都有一个prototype 属性,指向他的原型对象
+    //console.log(Person.prototype.constructor);
+    //console.log(Person.prototype.constructor==Person);  //true
+
+    //console.log(person1.__proto__); //{constructor: ƒ}
+
+
+    ///正确的添加方法方式
+    // Person.prototype.showinfo=function () {
+    //     console.log("我的名字是"+this.name+"我是年龄是"+this.age);
+    // }
+    console.log(Person.prototype)  //{constructor: ƒ}
+
+    //错误的添加方式,
+    Person.prototype={
+        showinfo:function () {
+            console.log('1111')
+        }
+    }
+    console.log(Person.prototype) //{showinfo: ƒ}
+
+
+
+    person1.showinfo();
+
+    function Array() {
+        
+    }
+
+
+    //person1.showinfo(); //我的名字是1我是年龄是18
+    //person2.showinfo(); //我的名字是2我是年龄是19
+
+    //console.log(person1.showinfo==person2.showinfo)  //true
+
+
+
+    // 找对象属性和方法的时候，先从自己的对象里面找，找不到的话，再在原型对象里面找
+    // console.log(person1.name)  //1
+    // console.log(person1.showinfo())//
+    // console.log(person1.qqqqq)  //undefined
+
+
+    //new Person()
+
+   //  new Object();
+   // console.log(Object.prototype);
+    /*
+    * constructor: ƒ Object()
+hasOwnProperty: ƒ hasOwnProperty()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+valueOf: ƒ valueOf()
+    * */
+
+    //console.log(Person.prototype.__proto__);
+    /*
+    * {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+    * */
+
+
+
+ //   console.log(Object.prototype.__proto__);
+    //console.log(person1.toString())  //[object Object]
+
+
+    //console.log( Person.__proto__);  //ƒ () { [native code] }
+   // console.log( Person.__proto__.__proto__);
+    /*
+    * constructor: ƒ Object()
+hasOwnProperty: ƒ hasOwnProperty()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+valueOf: ƒ valueOf()
+__defineGetter__: ƒ __d
+    * */
+
+
+    // Person.__proto__.showage=function () {
+    //     console.log('我今年18岁')
+    // }
+    //
+    //
+    // function test2() {
+    //
+    // }
+    //
+    // test2.showage();  //我今年18岁
+
+    var arr=new Array();
+  //  console.log(arr.prototype);
+
+    //console.log(arr.__proto__==Array.prototype)  //true
+
+ //   console.log(arr.__proto__)
+    /*
+    * concat: ƒ concat()
+constructor: ƒ Array()
+copyWithin: ƒ copyWithin()
+entries: ƒ entries()
+every: ƒ every()
+fill: ƒ fill()
+filter: ƒ filter()
+find: ƒ find()
+findIndex: ƒ findIndex()
+flat: ƒ flat()
+flatMap: ƒ flatMap()
+forEach: ƒ forEach()
+includes: ƒ includes()
+indexOf: ƒ indexOf()
+join: ƒ join()
+keys: ƒ keys()
+lastIndexOf: ƒ lastIndexOf()
+length: 0
+map: ƒ map()
+pop: ƒ pop()
+push: ƒ push()
+reduce: ƒ reduce()
+reduceRight: ƒ reduceRight()
+reverse: ƒ reverse()
+shift: ƒ shift()
+slice: ƒ slice()
+some: ƒ some()
+sort: ƒ sort()
+splice: ƒ splice()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+unshift: ƒ unshift()
+values: ƒ values()
+Symbol(Symbol.iterator): ƒ values()
+Symbol(Symbol.unscopables):
+    * */
+
+    //入栈
+    // arr.push(11);
+    // arr.push(22);
+    // arr.push(33);
+    // console.log(arr);  //[11, 22, 33]
+    //
+    // // 弹栈
+    // arr.pop();
+    // console.log(arr); // [11, 22]
+
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+
+
+<script>
+    // var person ={
+    //     name: "zhangsan",
+    //     age: 21,
+    //     say: function(){
+    //         alert(this.name);
+    //     }
+    // };
+
+    // function Factory() {
+    //     var o = new Object();
+    //     o.name = name;
+    //     o.age = age;
+    //     o.family = family;
+    //     o.say = function(){
+    //         alert(this.name);
+    //     }
+    //     return o;
+    // }
+    //
+    // var f1 =Factory();
+    // var f2 =Factory();
+
+    //
+    // function createPerson(name,age,family) {
+    //     var o = new Object();
+    //     o.name = name;
+    //     o.age = age;
+    //     o.family = family;
+    //     o.say = function(){
+    //         alert(this.name);
+    //     }
+    //     return o;
+    // }
+    //
+    // var person1 =  createPerson("lisi",21,["lida","lier","wangwu"]);
+    // var person2 =  createPerson("wangwu",18,["lida","lier","lisi"]);
+    //
+    // console.log(person1 instanceof Object); // true   ，instance 会在原型链上找这个对象，找到就返回true,找不到返回false
+    // console.log(person1 instanceof Array); // false
+    //
+
+
+  //   function Person(name,age) {
+  //
+  //
+  //       this.name=name
+  //       this.age=age;
+  //       //return {a:1}
+  //   }
+  //
+  //
+  //
+  //   var p1 =new Person('zhangsan',1);
+  // //  console.log(p1);  // {a: 1}
+  //   console.log(p1);  // Person {name: "zhangsan", age: 1}
+
+    /*
+    * 1. 创建一个空的对象 var obj={};
+    * 2. 把obj的__proto__ 属性指向了Person构造函数的prototype对象
+    * 3. obj.name = name  动态设置this对象
+    * 4. 如果内部显式返回对象类型数据，则，返回该数据，执行结束；不然返回新创建的对象obj
+    * */
+
+    // apply 和 call
+    // var name='22'
+    // var obj={
+    //     name:"11",
+    //     showname:function () {
+    //         console.log(this.name)
+    //     }
+    // }
+    //
+    // obj.showname();  // 11
+    //
+    // var fn = obj.showname;
+    //
+    // fn.call(this);   // fn()  22
+    // fn.apply(this);   //      22
+
+
+    // var name='22'
+    // var obj={
+    //     name:"11",
+    //     showname:function (a,b,c) {
+    //         console.log(this.name,a,b,c)
+    //     }
+    // }
+    //
+    // var fn = obj.showname;
+    // fn.call(this,1,2,3);  //22 1 2 3
+    // fn.apply(this,[1,2,3]);
+
+    class Person{
+        name;
+        age;
+
+
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+
+        showInfo(){
+            console.log(this.name,this.age)
+        }
+    }
+
+    var person1 = new Person('zhangsan',18);
+    person1.showInfo();  //zhangsan 18
+
+    var a={
+
+    }
+</script>
+</body>
+</html>
