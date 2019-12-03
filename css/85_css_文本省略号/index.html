@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .a{
+            width: 100px;
+            height: 200px;
+            border: 1px solid red;
+            white-space :nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+        .b{
+            width: 100px;
+            height: 66px;
+            border: 1px solid red;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="a">张三的国张三的国张三的国张三的国张三的国张三的国</div>
+
+<div class="b">张三的国张三的国张三的国张三的国张三的国张三张三的国张三的国张三的国张三的国张三的国张三张三的国张三的国张三的国张三的国张三的国张三</div>
+</body>
+</html>
