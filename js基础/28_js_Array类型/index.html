@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+// var arr1=[1,2,3,4,5,6,7,"sdhfu",true];
+//
+// console.log(arr1);
+//
+// console.log(arr1[0])
+// arr1[0]=999;
+// console.log(arr1);
+
+// var arr1=[1,2,3,14];
+// console.log(arr1.length);
+//
+// console.log(arr1[arr1.length-1])  // 获得数组最后一个元素
+
+// 不行，不能判断是不是数组
+// var arr1=[];
+// var obj={};
+// // console.log(typeof arr1)  //object
+// // console.log(typeof obj)   //object
+//
+// console.log(Array.isArray(arr1))  //true
+// console.log(Array.isArray(obj))  // false
+
+
+var ary = [1,23,4];
+function isArray(o){
+    return Object.prototype.toString.call(o)== '[object Array]';
+}
+console.log(isArray(ary));  //true
+
+// 下标从0开始的，
+// console.log(arr1[0]); //1
+// //修改数组中项的值
+// arr1[0]=11111;
+// console.log(arr1[0]); //11111
+//
+// console.log(arr1.length); //9
+//
+// console.log(arr1[arr1.length-1])  //true
+
+// var arr2=new Array(4)
+//
+// console.log(arr2);
+//
+// var arr3= new Array('lisi',"zhangsan");
+//
+// console.log(arr3);
+
+//
+// var arr1=[];
+// var obj={};
+// console.log(typeof arr1)  //object
+// console.log(typeof obj)   //object
+//
+//
+// //成功判断数组
+// console.log(Array.isArray(arr1))  //true
+// console.log(Array.isArray(obj))  //false
+//
+// var ary = [1,23,4];
+// function isArray(o){
+//     return Object.prototype.toString.call(o)== '[object Array]';
+// }
+// console.log(isArray(ary));  // true
+
+
+</script>
+</body>
+</html>

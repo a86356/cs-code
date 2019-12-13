@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*逻辑取反，是false就转为true，是true就转为false，符号是感叹号，写在值的最前面*/
+    var b1=!false
+    var b2=!true
+    // console.log(b1); //true
+    // console.log(b2); //false
+    // console.log(!b1);  //false
+    //
+    //
+    // console.log(!false) //true
+    // console.log(!true) //false
+
+    var obj = {id:1,name:'tom'};
+    console.log(!obj);      //false
+    var obj = '';
+    console.log(!obj);      //true
+    var obj = 'tom';
+    console.log(!obj);      //false
+    var obj = 0;
+    console.log(!obj);      //true
+    var obj = 5;
+    console.log(!obj);      //false
+    var obj = null;
+    console.log(!obj);      //true
+    var obj = NaN;
+    console.log(!obj);      //true
+    var obj = undefined;
+    console.log(!obj);      //true
+
+
+    //空的字符串，0，null,undefined,NaN 对这些值进行逻辑非操作的话，会返回true，
+    // 其他的值会返回false
+</script>
+</body>
+</html>

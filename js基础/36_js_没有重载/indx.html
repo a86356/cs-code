@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function add(a,b,c) {
+        return a+b+c;
+    }
+
+    function add(a,b) {
+        return a+b+1;
+    }
+    //假如存在重载，下面的函数会分别调用不同的函数，
+    add(1,2,3)
+    add(1,2)
+
+    //但是js没有重载，后面的函数会覆盖前面的函数,
+    console.log(add(1,2,4))  //4
+</script>
+</body>
+</html>

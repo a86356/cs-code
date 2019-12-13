@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // var a=1;
+    // var q=0o10;
+    // var m=0x18;
+    // console.log(a)
+    // console.log(q)
+    // console.log(m)
+
+    /*现实生活中是对的，但是程序中因为存在精度的问题，所以不能这样比较，
+    *
+    * 所以我们的浮点数，不要去做相等的比较
+    * */
+   // console.log(0.1+0.2==0.3) //0.30000000000000004
+   //  console.log(Number.MAX_VALUE)  //1.7976931348623157e+308
+   //  console.log(Number.MIN_VALUE) //5e-324
+
+
+    // console.log(NaN == NaN); //false
+    //
+    // console.log(1==1);
+    //
+        /*把字符串转为整数*/
+    // console.log(typeof parseInt("10"));  //number
+    // console.log(typeof "10");    //string
+
+
+    // console.log(typeof parseFloat("1.2"))
+    // console.log(parseFloat("1.2"))
+    // console.log(parseFloat("q1.2a"))  //NaN
+
+
+    console.log(isNaN(NaN))  //true
+    console.log(isNaN(10))  //false 10是一个数值
+    console.log(isNaN("10"))  //false "10“能被转为一个数值
+    console.log(isNaN("a"))  //true 不能转为数值
+    console.log(isNaN(true))  //false 可以被转为数值
+</script>
+</body>
+</html>

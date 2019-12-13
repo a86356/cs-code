@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /*因为 .b不是.a的第一个子元素，.a下面的第一个子元素是span,所以这里没办法匹配*/
+        .a .b:first-child{
+            color: red;
+        }
+
+        /*这里匹配了.a下面的第一个.b类的元素，这个元素不必是.a的第一个元素*/
+        .a .b:first-of-type{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <span>span</span>
+        <div class="b">1</div>
+        <div class="b">2</div>
+        <div class="b">3</div>
+    </div>
+</body>
+</html>

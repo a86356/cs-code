@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // console.log(true && true) //true
+    // console.log(true && false) //false
+    // console.log(false && true) //false
+    // console.log(false && false) //false
+
+
+    // var obj={};
+    // console.log(obj && null);                     //null
+    // console.log(null && obj);                     //null
+    // console.log(obj && undefined)            //undefined
+    // console.log(undefined && obj);           //undefined
+    // console.log(obj && NaN);                    //NaN
+    // console.log(NaN && obj);                   //NaN
+    // var obj2={} ;  var a=(obj && obj2);
+    // console.log(a);                                    //{} 返回第二个obj2{}
+    // console.log(a==obj2);                        //true
+
+
+    // var found=true;
+    // var result=(found && someUdefinedVariable);
+    // console.log(result);   //someUdefinedVariable is not defined
+
+    /*假如第一个操作数的值是进行new Boolean()操作后，他的值是false的话,那么不会对第二个值进行操作，
+    * 这个就是逻辑与的短路操作
+    * */
+    var found=false;
+    var result=(found && someUdefinedVariable);
+    console.log(result);
+
+</script>
+</body>
+</html>

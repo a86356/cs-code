@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*匹配了父元素的第一个子元素，并且这个元素的标签是li*/
+        /*li:first-child{*/
+        /*   color: red;*/
+        /*}*/
+        /*!*匹配了父元素的最后一个子元素，并且这个子元素的标签是li*!*/
+        /*li:last-child{*/
+        /*    color: green;*/
+        /*}*/
+
+        /*!*匹配了父元素的第二个子元素，并且这个子元素的标签是li*!*/
+        /*li:nth-child(2){*/
+        /*    color: blue;*/
+        /*}*/
+
+        li:nth-child(even){
+            background: red;
+        }
+
+        li:nth-child(odd){
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>

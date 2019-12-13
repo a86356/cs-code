@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /*2种创建Object类型的方法，没有本质区别，只是写法不同*/
+    var obj1={};
+    var obj2=new Object();
+
+    console.log(obj1) //Object
+    console.log(obj2) //Object
+
+    //person可以叫实例
+    var person = new Object();
+    //他有一个age的属性，值是19
+    person.age=19;
+    //他有一个eat的方法，
+    person.eat=function () {
+        console.log(1111);
+    }
+
+
+    console.log(person.age);
+    person.eat();
+
+
+    var obj3={
+        age:19,
+        eat:function () {
+
+        }
+    }
+
+    obj3.name='zhangsan';
+    console.log(obj3.name)
+
+</script>
+</body>
+</html>

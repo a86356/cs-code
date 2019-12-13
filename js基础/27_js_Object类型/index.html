@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var person1 ={
+        age:1,
+        name:'lisi',
+        showinfo:function () {
+            console.log('我被调用了');
+        }
+    };
+
+    // 读取
+    // console.log(person1.age) //1
+    // console.log(person1['age']) //1
+    // console.log(person1.name) //lisi
+    // person1.showinfo()     //我被调用了
+
+        // Object是js中最顶层的对象，也是最通用的对象
+
+    var person2 ={
+        age:1,
+        name:'lisi',
+        showinfo:function () {
+            console.log('我被调用了');
+        }
+    };
+    person2.age=12;
+    console.log(person2.age) //12
+</script>
+</body>
+</html>

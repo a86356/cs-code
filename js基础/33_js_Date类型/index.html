@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //d Dec 11 2019 08:47:13 GMT+0800 (中国标准时间)
+
+
+  function getNow() {
+      var date=new Date();
+      var year = date.getFullYear();
+      var month = date.getMonth()+1;
+      var day = date.getDate();
+      return year+'-'+month+'-'+day;
+  }
+ // console.log(getNow());
+
+
+  var timestamp = (new Date()).getTime();
+  console.log(timestamp); //
+
+</script>
+</body>
+</html>

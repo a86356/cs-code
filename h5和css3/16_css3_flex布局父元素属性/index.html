@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .wrap{
+            /*我们在容器上加了display：flex 属性之后，容器中的子元素就变成了水平排序*/
+            display: flex;
+            width: 1000px;
+            height: 300px;
+            background: bisque;
+            /*flex-direction 决定了项目的排列方向*/
+            /*flex-direction: column-reverse*/
+
+            /*flex-wrap 决定子元素如何换行*/
+            /*flex-wrap: wrap;*/
+
+
+            /* `flex-flow`属性是`flex-direction`属性和`flex-wrap`属性的简写形式*/
+            flex-flow: row nowrap;
+            /* `justify-content`属性定义了项目在主轴上的对齐方式。*/
+            justify-content: center;
+
+            align-items:flex-end ;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+        }
+        .a{
+            background: red;
+        }
+        .b{
+            background:blue;
+        }
+        .c{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="item a">1</div>
+        <div class="item b">2</div>
+        <div class="item c">3</div>
+    </div>
+</body>
+</html>
