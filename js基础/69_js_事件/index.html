@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body id="body">
+<div class="box" id="box">
+    <!--添加事件的方法1-->
+    <div id="a" onclick="alert('1111')">
+        12111111111111111
+    </div>
+</div>
+
+<script>
+    // 什么是js的事件
+    // 事件就是处理用户的一些操作的函数
+
+    // 操作的类型 ，我们点击事件，鼠标点下去我们干什么事呢？ 这个就是我们需要自己写函数来处理的。
+    // var a=  document.getElementById("a");
+    // var body=  document.getElementById("body");
+
+    // 触发事件，触发事件就是用户点击了之后，这个事件处理函数被执行了
+    // 添加事件的一种方法 2
+    // a.onclick=function () {
+    //     alert('我呗点击了');
+    // }
+    //
+    // body.onclick=function () {
+    //     alert("我是body，我被点击了");
+    // }
+
+
+
+    var a=document.getElementById("a");
+    var box=document.getElementById("box");
+    // 也是添加事件的一种方法 3
+    // a.addEventListener('click',function () {
+    //     alert("a")
+    // },true) // true用捕获的方式来处理事件 ，false 用冒泡的方式来处理事件
+    //
+    // box.addEventListener('click',function () {
+    //     alert("box")
+    // },true)
+
+
+</script>
+</body>
+</html>

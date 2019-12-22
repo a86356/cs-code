@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bb{
+            width: 150px;
+            height: 150px;
+            background: red;
+            position: absolute;
+            left: 100px;
+            top: 190px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<div id="a" class="bb" >
+
+
+    123
+</div>
+<script>
+    var a = document.getElementById("a");
+
+
+    console.log(a.offsetWidth)
+    console.log(a.offsetHeight)
+    console.log(a.offsetLeft)
+    console.log(a.offsetTop)
+
+    function getViewport() {
+        // ie7之前兼容写法
+        if(document.compatMode=='BackCompat'){
+            return  {
+                width: document.body.clientWidth,
+                height: document.body.clientHeight
+            }
+        }
+        return {
+            width:document.documentElement.clientWidth,
+            height:document.documentElement.clientHeight,
+        }
+    }
+
+    console.log(getViewport());
+
+    // var docHeight = Math.max(document.documentElement.scrollHeight,document.documentElement.clientHeight)
+    // var docWidth = Math.max(document.documentElement.scrollWidth,document.documentElement.clientWidth)
+    // console.log(docWidth,docHeight);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09_es6_函数</title>
+</head>
+<body>
+<script>
+    // 场景
+    // function f(...values){
+    //     console.log(values);
+    // }
+    // f(1,2);      //2
+    // f(1,2,3,4);  //4
+
+    // function f(a=1,b=2) {
+    //     console.log(a,b)
+    // }
+    // f(4,5)//4,5
+    // f()//1,2
+
+
+    //es5
+    function funcname() {
+        //code
+    }
+
+
+    //es6
+    // var f = v =>  v;
+    //
+    // console.log(f(4444))
+
+
+    // var a=(a,b)=>{
+    //     var v=1;
+    //     console.log(a,b);
+    // }
+    //
+    // a("行者课堂",'cs1024');
+    //
+
+
+    // 回调函数
+    var Person = {
+        'age': 18,
+        'sayHello': function () {
+            setTimeout(function () {
+                console.log(this.age);
+            });
+        }
+    };
+    var age = 20;
+
+    // 所有匿名函数的this都是window
+    Person.sayHello();  // 20
+
+
+    var Person1 = {
+        'age': 18,
+        'sayHello': function () {
+            setTimeout(()=>{
+                console.log(this.age);
+            });
+        }
+    };
+    var age = 20;
+    // 箭头函数的this，代表声明时候的对象，而不是调用时候的对象
+    Person1.sayHello();  // 18
+
+</script>
+</body>
+</html>

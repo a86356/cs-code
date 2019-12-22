@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+
+12312
+<input type="text" id="text">
+
+
+<script>
+    // window.onload=function () {
+    //     // 通常用在页面加载好了之后，进行的一些初始化的操作
+    //     alert('页面加载好了');
+    // }
+
+    // window.onresize=function (event) {
+    //     // 判断可视区的变化，
+    //     console.log('我被调用了');
+    // }
+
+    // window.onscroll=function (e) {
+    //     // 滚动条距离顶部的距离
+    //     console.log(document.documentElement.scrollTop)
+    // }
+
+    var text = document.getElementById("text");
+    var body = document.getElementById("body");
+    body.onclick=function(e){
+        console.log(e.type);
+    }
+
+    text.onkeydown=function (ev) {
+
+        console.log(ev.type)
+    }
+</script>
+</body>
+</html>

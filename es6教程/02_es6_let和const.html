@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02-es6-let和const</title>
+</head>
+<body>
+<script>
+    // es5
+    // var a=1;
+    //
+    //
+    // // es6
+    // let b=1;
+
+    //代码块内有效
+    // {
+    //     let a = 11;
+    //     console.log(a)
+    // }
+    // a   // 报错 ReferenceError: a is not defined
+
+
+ //    {
+ //        let a = 111;
+ //        var b = 1;
+ //    }
+ // //   a  // ReferenceError: a is not defined
+ //    console.log(b)
+
+
+    // let a = 11;
+    //  a = 22;
+    // var b = 33;
+    // var b = 44;
+    // a  // Identifier 'a' has already been declared
+    // b  // 44
+    //
+
+    //eventloop 处理机制，
+
+
+    // for (var i = 0; i < 10; i++) {
+    //     setTimeout(function(){
+    //         console.log(i);
+    //     })
+    // }
+
+
+    // for (let j = 0; j < 10; j++) {
+    //     setTimeout(function(){
+    //         console.log(j);
+    //     })
+    // }
+
+    // const PI = "3.14";
+    // PI  // 3.14
+    //
+    // const MY_AGE;  // SyntaxError: Missing initializer in const declaration
+
+
+    var qq=100000356;
+    var a=1;
+    if(a==1){
+        console.log(qq);
+        // 暂时性死区   Cannot access 'qq' before initialization
+        let qq=123;
+    }
+
+
+</script>
+</body>
+</html>

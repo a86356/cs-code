@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12_es6_类</title>
+</head>
+<body>
+<script>
+
+    // es5 创建 对象的方法
+    // function Person(age){
+    //     this.age=age;
+    // }
+    // var p1=new Person(18);
+    //
+
+
+    // 类，我们可以用类创建对象，类相当于对象的模板，
+
+    // 我们这里声明了一个class class的名字是person ，class就是类
+    class Person{
+        //对象有属性和方法
+        // 属性
+
+        // 一般属性我们用下划线开头的花，表示私有属性，私有属性一般需要用方法访问，而不是直接访问
+        // 当然他也可以直接访问，但是不推荐
+        _age;
+
+        // alt + insert
+        get age() {
+            return this._age;
+        }
+
+        set age(value) {
+            this._age = value;
+        }
+
+
+
+
+        constructor(age){
+            this._age = age;
+        }
+
+        // 设置age的方法
+        // setAge(age){
+        //     this.age=age
+        // }
+
+        //方法
+        showname() {
+            console.log(this.age+"岁")
+        }
+
+        // 静态方法，可以直接用类名去调用
+        static  PP(){
+            console.log('pp123');
+        }
+    }
+
+    // 如何创建一个对象？
+    var p1 = new Person(18);
+    p1.age=123;
+    //  我们先设置了age属性
+    //p1.setAge(18)
+
+    //获得对象的属性
+    console.log(p1.age) //  18
+
+    // 调用对象的方法
+//    p1.showname();  // 18 岁
+
+
+    Person.PP();
+
+    //extends 表示继承
+
+    // super() 表示调用父类的构造方法，一般我们继承了父类的话，在构造函数里面需要先调用父类的构造函数，用super()调用
+
+    //继承 子类可以继承父元素的属性和方法 ，并且可以获得父类的属性，或者调用父类的方法
+</script>
+</body>
+</html>

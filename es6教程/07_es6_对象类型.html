@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07_es6_对象类型</title>
+</head>
+<body>
+<script>
+    // const age = 12;
+    // const name = "Amy";
+    // const person = {age, name};// 等同于 const person = {age: age, name: name}
+    //
+    // console.log(person.age)
+
+
+    // let person = {name: "Amy", age: 15};
+    // let someone = { ...person };
+    // console.log(someone); // someone 就和person是一样的，是复制出来的
+    // // 说明通过上面的方式复制的对象，是不同的对象，他们占用的内容是不同的
+    // person.name='zhangsan';
+    // console.log(person);
+    // console.log(someone);
+
+
+    // let age = {age: 15};
+    // let name = {name: "Amy"};
+    // let person = {...age, ...name};
+    // console.log(person)  //{age: 15, name: "Amy"}
+
+
+    //对象合并的时候，后面的属性会覆盖前面的属性
+    // let person = {name: "Amy", age: 15};
+    // let someone = { ...person, name: "Mike", age: 17};
+    //
+    // console.log(someone);
+
+
+    //对象合并的时候，后面的属性会覆盖前面的属性
+    let target = {a: 1};
+    let object2 = {b: 2};
+    let object3 = {a: 3};
+    Object.assign(target,object2,object3);
+    console.log(target);
+</script>
+</body>
+</html>

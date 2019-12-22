@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function a() {
+        var m=1;
+        function b() {
+            console.log(m)
+        }
+        return b;
+    }
+
+    // 正常情况下，我们无法访问m这个变量,但我们可以通过返回一个函数，来访问m
+    var qq=a();
+    qq();
+
+</script>
+</body>
+</html>

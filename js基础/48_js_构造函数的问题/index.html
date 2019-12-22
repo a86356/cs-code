@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function Person(qq,web) {
+        this.qq=qq;
+        this.web=web;
+        this.show=function () {
+            console.log(this.qq)
+        }
+    }
+
+    var person1 = new Person('100000356','cs1024.com')
+    var person2 = new Person('10000356','www.cs1024.com')
+
+ //   console.log(person1.show==person2.show) //
+
+
+    function Person(qq,web) {
+        this.qq=qq;
+        this.web=web;
+        this.show=show
+    }
+    function Person2(qq,web) {
+        this.qq=qq;
+        this.web=web;
+        this.show=show
+    }
+
+
+    var person1 = new Person('100000356','cs1024.com')
+        var person2 = new Person('10000356','www.cs1024.com')
+
+
+    function show(){
+        console.log(this.qq)
+    }
+    console.log(person1.show==person2.show) //true
+</script>
+</body>
+</html>

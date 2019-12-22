@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // var leftpos = (typeof window.screenLeft =='number')?window.screenLeft:window.screenX;
+    // var toppos = (typeof window.screenTop =='number')?window.screenTop:window.screenY;
+    // console.log(leftpos,toppos);
+
+
+    // var winWidth = 0;
+    // var winHeight = 0;
+    // function findDimensions() //函数：获取尺寸
+    // {
+    //     //获取窗口宽度
+    //     if (window.innerWidth){
+    //         winWidth = window.innerWidth;
+    //     } else if ((document.body) && (document.body.clientWidth)){
+    //         winWidth = document.body.clientWidth;
+    //     }
+    //     //获取窗口高度
+    //     if (window.innerHeight){
+    //         winHeight = window.innerHeight;
+    //     }
+    //     else if ((document.body) && (document.body.clientHeight)){
+    //         winHeight = document.body.clientHeight;
+    //     }
+    //     console.log(winWidth,winHeight)
+    // }
+    // findDimensions();
+    // window.onresize = findDimensions
+
+
+    // setTimeout(function () {
+    //     console.log("我在3秒后被调用")
+    // },3000)
+
+
+    var i=0;
+    var timer = setInterval(function () {
+        console.log('我被调用了,i='+i);
+        i++;
+        if(i==10){
+            clearInterval(timer);
+        }
+    },1000)
+
+    //clearInterval(timer);
+
+    window.alert('q3213');
+    alert("1")
+</script>
+</body>
+</html>

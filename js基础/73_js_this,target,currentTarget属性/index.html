@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+<input type="button" value="按钮" id="btn">
+<script>
+    var body= document.getElementById("body");
+    body.onclick=function (event) {
+        var target = event.target
+        var currentTarget = event.currentTarget;
+        console.log(currentTarget)
+        // target 表示实际点击的元素，这里我们实际点击的元素是按钮，所以target 是按钮，和this还有currentTarget不同了
+        console.log(target)  // 我们点击的是button,所以是button
+        console.log(this)
+    }
+</script>
+</body>
+</body>
+</html>

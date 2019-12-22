@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function Person(qq,web) {
+        this.qq=qq;
+        this.web=web;
+        this.show=function () {
+            console.log("我的q="+this.qq)
+        }
+    }
+
+    var person1 = new Person('100000356','cs1024.com')
+    var person2 = new Person('10000356','www.cs1024.com')
+
+    // console.log(person1.qq)
+    // console.log(person1.show())
+
+
+    console.log(person1.constructor ==Person);
+    console.log(person2.constructor ==Person);
+</script>
+</body>
+</html>

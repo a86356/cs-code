@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function Person(qq,web) {
+        this.qq=qq;
+        this.web=web;
+    }
+
+    Person.prototype.name='zhangsan';
+    Person.prototype.show=function () {
+        console.log('show called')
+    };
+
+    var person1 = new Person('100000356','cs1024.com')
+
+   // console.log(person1)
+    console.log(person1.__proto__==Person.prototype);
+   // console.log(Person.prototype.constructor==Person)
+   // console.log(person1.name)
+   // console.log(person1.show())
+
+</script>
+</body>
+</html>

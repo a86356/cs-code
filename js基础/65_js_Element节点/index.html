@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="aaa" class="bcbc" data-index="666">
+</div>
+​
+<script>
+    var a = document.getElementById("aaa");
+    // console.log(a.id) //aaa
+    // console.log(a.className) //bcbc
+    //
+    // a.id ='newid'
+    // a.className ='newclassname'
+
+    console.log(a.getAttribute("id")) //aaa
+    console.log(a.getAttribute("class")) //aaa
+   // console.log(a.getAttribute("data-index")) //aaa
+    a.setAttribute("id",'bbb')
+
+</script>
+</body>
+</html>

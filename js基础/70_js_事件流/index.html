@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <div id="a">
+        12
+    </div>
+</div>
+
+
+<script>
+    var a=document.getElementById("a");
+    var box=document.getElementById("box");
+
+    a.addEventListener('click',function () {
+        alert("a被捕获了")
+    },true)
+
+    box.addEventListener('click',function () {
+        alert("box被捕获了")
+    },true)
+
+    a.addEventListener('click',function () {
+        alert("a冒泡")
+    },false)
+    box.addEventListener('click',function () {
+        alert("box冒泡")
+    },false)
+</script>
+</body>
+</html>

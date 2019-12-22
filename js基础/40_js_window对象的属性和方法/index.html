@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+//console.log(window);
+
+
+var a=1;
+console.log(window.a==a)  //true
+console.log(window);
+
+function add(a,b) {
+    return a+b;
+}
+console.log(add(1,2)) // 等同于 window.add(1,2)
+
+console.log(window.add(1,2))// 3
+
+console.log(window.add ==add) //true
+
+console.log(window)
+
+</script>
+</body>
+</html>

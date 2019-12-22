@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+
+<div id="a">123</div>
+<script>
+    var a = document.getElementById("a");
+    var body = document.getElementById("body");
+    a.onclick=function (event) {
+        // 阻止冒泡
+        event.stopPropagation();
+        console.log('a 被点击了');
+    }
+    body.onclick=function () {
+        console.log('body 被点击了')
+    }
+
+
+</script>
+</body>
+</html>

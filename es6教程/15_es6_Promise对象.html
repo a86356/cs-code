@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15_es6_Promise对象</title>
+</head>
+<body>
+<script>
+
+    console.log(Promise.prototype);
+    // then catch final
+
+
+    // let p = new Promise(function(resolve, reject){
+    //     //做一些异步操作
+    //     setTimeout(function(){
+    //         console.log('执行完成Promise'); //
+    //         resolve('要返回的数据可以任何数据例如接口返回数据');
+    //     }, 2000);
+    // });
+
+    //     var p1 = new Promise();
+    //
+    // console.log(Promise);
+    // console.log(Promise.prototype);
+
+    function time() {
+         return new Promise(function(resolve, reject){
+            //做一些异步操作
+            setTimeout(function(){
+                console.log('执行完成Promise');
+                let random =Math.random()*10;// 0-10的随机数
+                console.log(random)
+                if(random<5){
+                    // 调用resolve的话，表示成功，程度的话，会把resolve的参数
+                    //传递给then
+                    resolve('成功啦');
+                }else{
+
+                    // 执行reject的方法，reject的参数会传递给catch这个方法
+                    reject('失败啦');
+                }
+
+            }, 400);
+        })
+    }
+    // then的参数就是上面resolve的参数的值
+    time().then(res=>{
+        // then是resolve被调用执行的部分，也就是成功执行的部分
+        console.log(res);
+    }).catch(err=>{
+        // catch是reject 被调用执行的部分，也就是失败执行的部分
+        console.log(err);
+    }).finally(res=>{
+
+        // finally是不管成功还是失败都会执行的部分
+        console.log('我执行了---finally');
+    })
+
+</script>
+</body>
+</html>

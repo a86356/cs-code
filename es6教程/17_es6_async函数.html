@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17_es6_async函数</title>
+</head>
+<body>
+
+<script>
+    // async function helloAsync(){
+    //    // async 函数里面的return 的话，会返回一个promise的对象，
+    //     // 并且这个对象是resolved ，还有resolved的值是返回的值
+    //     return "helloAsync";
+    // }
+    //
+    // console.log(helloAsync())  // Promise {<resolved>: "helloAsync"}
+    //
+    // helloAsync().then(v=>{
+    //     console.log(v);         // helloAsync
+    // })
+
+
+    // await 可以理解为等待，需要和async搭配使用，不能单独使用的
+   // await 修饰的函数，里面返回一个promise的对象
+
+
+    function testAwait(){
+        return new Promise((resolve) => {
+            setTimeout(function(){
+                console.log("testAwait");
+                resolve();
+            }, 1000);
+        });
+    }
+
+    async function helloAsync(){
+        await testAwait();
+        console.log("helloAsync");
+    }
+    helloAsync();
+
+</script>
+</body>
+</html>
