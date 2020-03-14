@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 <head>
@@ -187,3 +188,194 @@
 </script>
 </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <title>我的</title>
+</head>
+<body>
+
+<div class="minewrap">
+    <div class="personinfo">
+        <div class="left">
+            <img src="images/placeholder_img.png" alt="">
+        </div>
+        <div class="right">
+            <div class="phone">1888888888</div>
+            <div class="grade">會員等級:普通會員</div>
+            <div class="code">激活碼:dfhsu</div>
+        </div>
+    </div>
+
+    <div class="earning">
+        <div class="item">
+            <div class="tit">今日訂單</div>
+            <div class="subtit">111</div>
+        </div>
+        <div class="item">
+            <div class="tit">今日預估</div>
+            <div class="subtit">111</div>
+        </div>
+        <div class="item">
+            <div class="tit">昨日訂單</div>
+            <div class="subtit">11</div>
+        </div>
+        <div class="item">
+            <div class="tit">昨日預估</div>
+            <div class="subtit">111</div>
+        </div>
+    </div>
+    
+    <div class="one">
+        <div class="line">
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/myearning.png" alt="">
+                </div>
+                <div class="subtit">我的收益</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/orderdetail.png" alt="">
+                </div>
+                <div class="subtit">訂單明細</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/myteam.png" alt="">
+                </div>
+                <div class="subtit">我的團隊</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/sharefriends.png" alt="">
+                </div>
+                <div class="subtit">我的收益</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="two">
+        <div class="line">
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/newone.png" alt="">
+                </div>
+                <div class="subtit">新人課堂</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/notice.png" alt="">
+                </div>
+                <div class="subtit">官方公告</div>
+            </div>
+
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/fav_1.png" alt="">
+                </div>
+                <div class="subtit">我的收藏</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/kefu.png" alt="">
+                </div>
+                <div class="subtit">專屬客服</div>
+            </div>
+
+        </div>
+        <div class="line">
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/goodcomment.png" alt="">
+                </div>
+                <div class="subtit">五星好評</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/aboutus.png" alt="">
+                </div>
+                <div class="subtit">關於我們</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/feedback.png" alt="">
+                </div>
+                <div class="subtit">綁定訂單</div>
+            </div>
+            <div class="item">
+                <div class="iconwrap">
+                    <img src="images/setting.png" alt="">
+                </div>
+                <div class="subtit">我的設置</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="earningmoney">
+        <img src="images/banner_earnmoney.png" alt="">
+    </div>
+</div>
+
+
+
+<div class="h50"></div>
+<!--底部导航栏-->
+<div class="footerwrap">
+    <div class="cnt">
+        <div class="item">
+            <div class="imgwrap">
+                <img class="icon" src="images/home_unselected.png" alt="">
+            </div>
+            <div>
+                <span>首页</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="imgwrap">
+                <img class="icon"  src="images/category_unselected.png" alt="">
+            </div>
+            <div>
+                <span>排行</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="imgwrap">
+                <img class="icon"  src="images/mine_unselected.png" alt="">
+            </div>
+            <div>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function(doc, win) {
+        var docEl = doc.documentElement;
+        var recalc = function() {
+            var width = docEl.clientWidth;
+            if (width > 750) {
+                width = 750;
+            }
+            //现在设计稿都是 750px的，
+            // 乘以100，px : rem = 100 : 1
+            docEl.style.fontSize = 100 * (width / 750) + 'px';
+        };
+        recalc()
+        if (!doc.addEventListener) return;
+        win.addEventListener('resize', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>
+>>>>>>> cbd982388c6cbb123184975be3077c8a2af4b9c2
