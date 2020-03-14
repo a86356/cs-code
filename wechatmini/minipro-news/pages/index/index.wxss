@@ -1,0 +1,6 @@
+.container{
+
+}
+.pic-item{
+  width: 100%;
+}

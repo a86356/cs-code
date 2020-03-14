@@ -1,0 +1,5 @@
+<view class="container">
+  <image class="avatar" src='{{avatar}}'></image>
+  <text class="nickname">{{nickName}}</text>
+  <button open-type="getUserInfo" bindgetuserinfo='getInfo' >点我获得用户昵称和头像</button>
+</view>

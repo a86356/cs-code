@@ -1,0 +1,30 @@
+<view class="container">
+    <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{pics}}" wx:key="*this">
+          <swiper-item>
+            <image class="pic-item" src="{{item.img}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+
+
+      <!-- 新闻列表 -->
+
+      <view class="news-list">
+        <view class="item" wx:for="{{newsList}}" wx:key="*this" bindtap="goDetail" data-id="{{item.id}}">
+          <view class="left">
+            <image class="img" src='{{item.poster}}'></image>
+          </view>
+          <view class="right">
+           
+            <view class="tit">
+              {{item.title}}
+            </view>
+            <view class="date">
+              {{item.add_date}}
+            </view>
+          </view>
+        </view>
+      </view>
+</view>

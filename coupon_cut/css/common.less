@@ -1,0 +1,531 @@
+.h50{
+  height: 50px;
+}
+body{
+  background: #f5f5f5;
+}
+//===首頁======
+.topnavwrap{
+  position: fixed;
+  left: 0;
+  top:0;
+  font-size: 0.32rem;
+  width: 100%;
+  .cnt{
+    width: 100%;
+    height: 50px;
+    background: #f02d45;
+    display: flex;
+
+    .icon{
+      width: 25px;
+      height: 25px;
+    }
+
+    .cnt-left{
+      flex: 9;
+
+      .searchwrap{
+        display: flex;
+        height: 30px;
+        background: #e17383;
+        margin-left: 0.2rem;
+        margin-top: 0.2rem;
+
+        .icon-search{
+          margin-left: 0.2rem;
+          margin-top: 0.1rem;
+        }
+        .r{
+          margin-top: 0.18rem;
+          margin-left: 0.2rem;
+          color: #fff;
+        }
+      }
+    }
+    .cnt-right{
+      flex:1;
+      margin-left: 0.3rem;
+      margin-top: 0.2rem;
+    }
+  }
+}
+.carouselwrap{
+  img{
+    max-width: 100%;
+  }
+}
+
+.tipswrap{
+  font-size: 0.25rem;
+  .tips{
+    display: flex;
+    .item{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      .icon{
+        width: 20px;
+        height: 20px;
+      }
+      .txt{
+        margin-left: 5px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+
+.hotsellwrap{
+  background: #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  .cnt{
+    margin: 0 auto;
+    width: 90%;
+    background: #f6f6f6;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    .l{
+      border-radius: 50%;
+      background: #fff;
+      width: 30px;
+      height: 30px;
+      color: #f02d45;
+      font-size: 0.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+    .r{
+      font-size: 0.2rem;
+      color: #000;
+      text-decoration: underline;
+      line-height: 30px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.brandwrap{
+  margin-top: 10px;
+  .brand{
+    background: #fff;
+    display: flex;
+    .l{
+      flex: 1;
+      img{
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .r{
+      flex: 2;
+
+      .r-item{
+        display: flex;
+        .item{
+          flex: 1;
+          img{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.recommendwrap{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  img{
+    max-width: 100%;
+  }
+}
+
+
+.detailselected{
+  background: #fff;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.16rem;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .l{
+      font-weight: bold;
+    }
+    .r{
+      color: #ccc;
+    }
+  }
+
+  .body{
+    display: flex;
+    overflow:auto;
+    .item{
+      width: 100px;
+      margin: 5px;
+      .imgwrap{
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .tit{
+        font-size: 0.18rem;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      .price{
+        font-size: 0.16rem;
+        line-height: 20px;
+        .aftercoupon{
+          color: #ccc;
+        }
+        .money{
+          color: red;
+          font-size: 0.18rem;
+          font-weight: bold;
+
+        }
+      }
+    }
+  }
+}
+.makemoneyplan{
+  background: #fff;
+  margin: 10px 0;
+  img{
+    max-width: 100%;
+  }
+}
+
+.recommendforu{
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+}
+
+
+
+.goodslist{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 60vw 60vw;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  .item{
+    font-size: 0.2rem;
+    background: #fff;
+    .tit{
+      font-size: 0.3rem;
+      padding: 4px;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .price{
+      padding: 4px;
+      .money{
+        color: red;
+        font-weight: bold;
+      }
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+/*底部导航样式*/
+.footerwrap{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  .cnt{
+    width: 100%;
+    font-size: 0.2rem;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    border-top: 1px solid #ccc;
+    .item{
+      flex: 1;
+      text-align: center;
+      margin-top: 5px;
+
+      span{
+        display: block;
+        margin-top: 2px;
+      }
+    }
+    .imgwrap{
+      margin: 0 auto;
+      .icon{
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+//=========排行=====================================//
+
+/*排行*/
+.tabwrap{
+  height: 40px;
+  background: #fff;
+
+  .tab{
+    display: flex;
+    .item{
+      flex: 1;
+      line-height: 40px;
+      font-size: 0.2rem;
+      text-align: center;
+    }
+    .active{
+      color: red;
+    }
+  }
+}
+//=========商品詳情======================================
+
+.goodsdetail{
+  background: #fff;
+  .carouselwrap{
+    img{
+      width: 100vw;
+      height: 100vw;
+    }
+  }
+  .tit{
+    font-size: 0.3rem;
+    line-height: 24px;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  .info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.2rem;
+    color: #999;
+    margin: 5px 10px;
+  }
+  .price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.3rem;
+    color: red;
+    margin: 5px 10px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .goodsdetailintro{
+    img{
+      max-width: 100%;
+    }
+  }
+}
+.goodsitemfooterwrap{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+
+  .tab{
+    font-size: 0.2rem;
+    display: flex;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    .icon{
+      width: 20px;
+      height: 20px;
+    }
+    .leftitem,.rightitem{
+      flex: 1;
+
+      .img{
+        margin-top: 5px;
+        text-align: center;
+      }
+      .tit{
+        text-align: center;
+        margin-top: 5px;
+      }
+    }
+    .l{
+      display: flex;
+      width: 80px;
+      box-sizing: border-box;
+      .rightborder{
+        border-right: 1px solid #ccc;
+      }
+
+    }
+    .r{
+      display: flex;
+      color: #fff;
+      flex: 1;
+      .rightone{
+        background: #f18938;
+      }
+      .righttwo{
+        background: #ed502b;
+      }
+    }
+  }
+}
+//====我的=============================//
+.minewrap{
+  background: #f5f5f5;
+  .personinfo{
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    font-size: 0.25rem;
+    .left{
+      img{
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .right{
+      margin-left: 15px;
+      line-height: 16px;
+      color: #666;
+    }
+  }
+  .earning{
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    font-size: 0.25rem;
+    .item{
+      flex: 1;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+
+  .one{
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 10px;
+    display: flex;
+    font-size: 0.25rem;
+    .line{
+      display: flex;
+      width: 100%;
+      .item{
+        flex: 1;
+        text-align: center;
+        img{
+          width: 20px;
+          height: 20px;
+        }
+        .subtit{
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .two{
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 10px;
+
+    font-size: 0.25rem;
+    .line{
+      display: flex;
+      width: 100%;
+      padding-bottom: 10px;
+      .item{
+        flex: 1;
+        text-align: center;
+        img{
+          width: 25px;
+          height: 25px;
+        }
+        .subtit{
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .earningmoney{
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+//===登录页======
+.loginwrap{
+  background: #fff;
+  .login{
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    padding-top: 200px;
+  }
+  .loginform{
+    .loginitem{
+      border-bottom: 1px solid #ccc;
+      font-size: 0.3rem;
+      line-height: 30px;
+      input{
+        border:none;
+        outline: none;
+        width: 100%;
+      }
+    }
+  }
+  .regandforget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.2rem;
+    color: #666;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+  .loginbtn{
+    margin-top: 50px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fcdf09;
+    color: #666;
+    font-size: 0.3rem;
+    border-radius: 20px;
+  }
+  .protocal{
+    margin-top: 20px;
+    font-size: 0.3rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+}

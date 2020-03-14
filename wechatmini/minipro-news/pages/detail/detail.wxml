@@ -1,0 +1,16 @@
+
+<view class="container">
+  <view class="title">
+    {{title}}
+  </view>
+  <view class="pic">
+    <image src="{{pic}}"></image>
+  </view>
+
+  <view class="content">
+    <text>{{content}}</text>
+  </view>
+  <view class="date">
+    {{date}}
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<view class="container">
+  <picker bindchange="changecity" mode='region'>
+  <view>{{region}}</view>
+  </picker>
+
+  <view class="weathertip">
+  {{cond_txt}}
+  </view>
+  <view class="pic">
+    <image class="pic" src='{{pic}}'></image>
+  </view>
+
+
+  <view class="detailbox">
+    <view class="box">
+      <view class="item">
+        湿度
+      </view>
+       <view class="item">
+        气压 
+      </view>
+       <view class="item">
+        能见度
+      </view>
+    </view>
+    <view class="box">
+      <view class="item">{{hum}}</view>
+      <view class="item">{{pres}}</view>
+      <view class="item">{{vis}}</view>
+    </view>
+    <view class="box">
+      <view class="item">风向</view>
+      <view class="item">风速</view>
+      <view class="item">风力</view>
+    </view>
+    <view class="box">
+      <view class="item">{{wind_dir}}</view>
+      <view class="item">{{wind_spd}}</view>
+      <view class="item">{{wind_sc}}</view>
+    </view>
+  </view>
+</view>

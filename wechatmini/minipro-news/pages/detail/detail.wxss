@@ -1,0 +1,19 @@
+.title{
+  text-align: center;
+  font: 50rpx;
+  font-weight: bold;
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+}
+.pic image{
+  width: 100%;
+}
+.content{
+  margin: 20rpx;
+  line-height: 40rpx;
+  color: #666;
+}
+.date{
+    margin: 20rpx;
+    text-align: right;
+}

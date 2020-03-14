@@ -1,0 +1,35 @@
+<view class="container">
+  <!-- 用户信息 -->
+  <view wx:if="{{isLogin}}" class='logined'>
+    <view class="avatar">
+      <image src="{{avatar}}"></image>
+    </view>
+    <view class="nickname">
+    {{nickName}}
+    </view>
+  </view>
+
+  <view wx:else class="btnwrap">
+     <button class="btn"  open-type="getUserInfo" bindgetuserinfo='getInfo' >未登录，点我登录</button>
+  </view>
+
+  <!-- 我的收藏 -->
+  
+  <view class="news-list">
+    <view class="collection">我的收藏</view>
+    <view class="item" wx:for="{{newsList}}" wx:key="*this" >
+      <view class="left">
+        <image class="img" src='{{item.poster}}'></image>
+      </view>
+      <view class="right">
+        
+        <view class="tit">
+          {{item.title}}
+        </view>
+        <view class="date">
+          {{item.add_date}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
