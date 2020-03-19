@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>请选择你的爱好</h1>
+        <div>
+            <input type="checkbox" id="all">全选
+            <input type="checkbox" id="reverse">反选
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox">唱歌
+            <input type="checkbox" class="checkbox">跳舞
+            <input type="checkbox" class="checkbox">吃饭
+            <input type="checkbox" class="checkbox">游泳
+            <input type="checkbox" class="checkbox">羽毛拍
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+
+        $("#all").change(function () {
+            var check = $("#all").is(":checked");
+
+            if(check){
+                $(".checkbox").prop("checked",true);
+            }else{
+                $(".checkbox").prop("checked",false);
+            }
+        })
+
+        $("#reverse").change(function () {
+            $(".checkbox").each(function(index){
+                var checked = $(".checkbox").eq(index).is(":checked");
+                if(checked){
+                    $(".checkbox").eq(index).prop("checked",false);
+                }else{
+                    $(".checkbox").eq(index).prop("checked",true);
+                }
+            });
+        })
+
+    </script>
+</body>
+</html>

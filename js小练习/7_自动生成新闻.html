@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+        <button id="btn">自动生成</button>
+        <ul class="list" id="list">
+
+        </ul>
+    </div>
+
+    <script>
+        var news=['中国海军战机紧急起飞拦截和外逼日军飞机视频曝光',
+            '外管局回应个人年度购汇额度5万美元是否有调整',
+            '第二批中央环保督察共受理举报2.6万件 举报标题党',
+            '中纪委：2016年前11月处分33.7万人追赃23.12亿',
+            '国五标准汽柴油1日起全国上市 93和97号汽油停售'];
+        var btn = document.getElementById("btn");
+        var list = document.getElementById("list");
+        btn.onclick=function () {
+            for (let i=0;i<news.length;i++){
+                var li = document.createElement('li');
+                li.innerHTML=news[i]
+                list.appendChild(li)
+            }
+        }
+
+    </script>
+</body>
+</html>

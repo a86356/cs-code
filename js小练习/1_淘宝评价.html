@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1700051_h5zj0kuvpqe.css">
+</head>
+<body>
+    <div>
+        <i data-index="0" class="iconfont icon-xingxing"></i>
+        <i data-index="1"  class="iconfont icon-xingxing"></i>
+        <i data-index="2"  class="iconfont icon-xingxing"></i>
+        <i data-index="3"  class="iconfont icon-xingxing"></i>
+        <i data-index="4"  class="iconfont icon-xingxing"></i>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+        $('i').click(function (e) {
+           var index = e.currentTarget.dataset.index;
+
+           //小于等于index的都变红色
+            for (var i=0;i<=index;i++){
+               $('i').eq(i).css("color",'red')
+            }
+
+            //大于index的且小于等于5的变黑色
+            for (var j=parseInt(index)+1;j<5;j++){
+                $('i').eq(j).css("color",'black')
+            }
+
+        })
+    </script>
+</body>
+</html>

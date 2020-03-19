@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+</head>
+<body>
+    <div>
+        <div>
+            <input id="ipt" type="text" placeholder="请输入你要留言的内容">
+            <button id="btn">确认</button>
+        </div>
+        <ul id="list">
+
+        </ul>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+
+    <script>
+        $("#btn").click(function () {
+            var val = $('#ipt').val();
+            //判断输入的内容是不是为空
+            if(val==''){
+                alert("留言内容不能为空");
+                return;
+            }
+
+            //把内容添加到ul里面
+            $("#list").append('<li>'+val+"</li>");
+
+        })
+    </script>
+</body>
+</html>
